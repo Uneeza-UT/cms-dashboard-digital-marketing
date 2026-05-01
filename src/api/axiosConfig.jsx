@@ -1,0 +1,39 @@
+import axios from "axios";
+
+const api = axios.create({
+  baseURL: "https://localhost:44345/api",
+});
+
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem("token");
+
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+
+  return config;
+});
+
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+
+    console.log("API ERROR:", error);
+
+    if (error.response) {
+      console.log("STATUS:", error.response.status);
+    }
+
+    
+    if (error.response && error.response.status === 401) {
+      
+      localStorage.removeItem("token"); // if using JWT
+
+      window.location.href = "/login"; // redirect to login
+    }
+
+    return Promise.reject(error);
+  }
+);
+
+export default api;
