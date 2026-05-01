@@ -134,3 +134,25 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Node / React
+node_modules/
+dist/
+.vite/
+build/
+.env
+.env.*
+npm-debug.log*
+
+# .NET backend
+bin/
+obj/
+backend/uploads/
+
+# IDE settings
+.vscode/
+
+# Logs
+*.log
+logs/
