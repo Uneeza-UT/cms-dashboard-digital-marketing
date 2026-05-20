@@ -2,7 +2,7 @@ import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import { motion } from 'framer-motion'
 import { X, CheckSquare2 } from 'lucide-react'
 import { toast } from 'react-toastify';
-import api from "../../api/AxiosConfig";
+import api from "../../api/axiosConfig";
 
 export default function DeleteModal({isOpen, onClose, controllerName, title, rowId, fetchData, submissionSuccess, setSubmissionSuccess}) {
 

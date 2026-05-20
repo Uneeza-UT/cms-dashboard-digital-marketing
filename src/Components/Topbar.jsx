@@ -1,7 +1,7 @@
 import { Bell, UserCog2, LogOut, ChevronDown, Menu, X, Rocket } from "lucide-react"
 import { NavLink, useLocation } from "react-router-dom"
 import { useState, useEffect } from "react";
-import api from "../api/AxiosConfig";
+import api from "../api/axiosConfig";
 import Avatar from "../assets/images/Avatar.png"
 import { toast } from 'react-toastify';
 

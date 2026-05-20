@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { motion } from 'framer-motion'
 import { X, CheckSquare2 } from 'lucide-react'
 import { toast } from 'react-toastify';
-import api from "../../api/AxiosConfig";
+import api from "../../api/axiosConfig";
 
 export default function ServiceModal({isOpen, onClose, isCreateForm, data, fetchServices, updateService, submissionSuccess, setSubmissionSuccess}) {
 

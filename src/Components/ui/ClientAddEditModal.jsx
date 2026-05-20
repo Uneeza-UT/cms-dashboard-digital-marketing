@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { parsePhoneNumberFromString } from "libphonenumber-js";
-import api from "../../api/AxiosConfig";
+import api from "../../api/axiosConfig";
 
 export default function ClientAddEditModal({isOpen, onClose, isCreateForm, data, fetchClients, updateClient, submissionSuccess, setSubmissionSuccess}) {
 

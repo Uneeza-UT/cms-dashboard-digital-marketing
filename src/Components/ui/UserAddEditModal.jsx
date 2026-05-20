@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from 'framer-motion'
 import { X, CheckSquare2, Eye, EyeOff } from 'lucide-react'
 import { toast } from 'react-toastify';
-import api from "../../api/AxiosConfig";
+import api from "../../api/axiosConfig";
 
 export default function UserAddEditModal({isOpen, onClose, isCreateForm, data, fetchUsers, updateUser, submissionSuccess, setSubmissionSuccess}) {
     const {register, handleSubmit, reset, formState: {errors, isSubmitting}} = useForm();

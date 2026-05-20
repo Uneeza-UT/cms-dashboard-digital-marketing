@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from 'framer-motion'
 import { X, Check, Pencil, Trash2 } from 'lucide-react'
 import { toast } from 'react-toastify';
-import api from "../../api/AxiosConfig";
+import api from "../../api/axiosConfig";
 import { timeAgo } from "../../data/timeAgo";
 
 export default function NotesModal({ isOpen, onClose, data, consultationId, fetchConsultations, fetchNotes }) {
