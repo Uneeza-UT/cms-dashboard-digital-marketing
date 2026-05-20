@@ -1,9 +1,9 @@
 import { useForm } from 'react-hook-form'
 import { useEffect, useState } from "react";
 import { Rocket, Eye, EyeOff } from 'lucide-react'
-import axios from "axios";
 import { toast } from 'react-toastify';
 import { useSearchParams } from "react-router-dom";
+import api from '../api/AxiosConfig';
 
 export default function ChangePassword() {
     const {register, handleSubmit, reset, watch, formState: {errors, isSubmitting}} = useForm();
@@ -17,7 +17,7 @@ export default function ChangePassword() {
     const sendEmail = async (formData) => {
            
         try {
-            await axios.post(`https://localhost:44345/api/forgotPassword/forgot-password`, 
+            await api.post(`/forgotPassword/forgot-password`, 
                 {
                     Email: formData.email,
                 }
@@ -49,7 +49,7 @@ export default function ChangePassword() {
                 }
                 console.log(payload)
         try {
-            await axios.post(`https://localhost:44345/api/forgotPassword/reset-password`, 
+            await api.post(`/forgotPassword/reset-password`, 
                 {
                     Token: token,
                     NewPassword: formData.password

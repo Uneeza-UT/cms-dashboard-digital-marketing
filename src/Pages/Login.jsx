@@ -1,9 +1,9 @@
 import { useForm } from 'react-hook-form'
 import { useState } from "react";
 import { Rocket, Eye, EyeOff } from 'lucide-react'
-import axios from "axios";
 import { NavLink, useNavigate } from "react-router-dom"
 import { toast } from 'react-toastify';
+import api from '../api/AxiosConfig';
 
 export default function Login() {
 
@@ -15,7 +15,7 @@ export default function Login() {
     const onSubmit = async (formData) => {
 
         try {
-            var response = await axios.post(`https://localhost:44345/api/login`, 
+            var response = await api.post(`/login`, 
                 {
                     Email: formData.email,
                     Password: formData.password
