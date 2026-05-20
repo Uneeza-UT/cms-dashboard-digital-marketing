@@ -5,7 +5,7 @@ import { MoreVertical, Edit, Delete, Plus } from "lucide-react";
 import { toast } from 'react-toastify';
 import ServiceModal from "../Components/ui/ServiceModal";
 import DeleteModal from "../Components/ui/DeleteModal";
-import api from "../api/AxiosConfig";
+import api from "../api/axiosConfig";
 import { servicesFilterConfig } from "../data/servicesFilterConfig";
 
 export default function Services() {

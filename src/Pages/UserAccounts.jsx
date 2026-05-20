@@ -5,7 +5,7 @@ import { Edit, MoreVertical, Delete, Plus } from "lucide-react";
 import { toast } from 'react-toastify';
 import DeleteModal from "../Components/ui/DeleteModal";
 import UserAddEditModal from "../Components/ui/UserAddEditModal";
-import api from "../api/AxiosConfig";
+import api from "../api/axiosConfig";
 import { employeesFilterConfig } from "../data/EmployeesFilterConfig";
 
 

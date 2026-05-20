@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Rocket, Eye, EyeOff } from 'lucide-react'
 import { toast } from 'react-toastify';
 import { useSearchParams } from "react-router-dom";
-import api from '../api/AxiosConfig';
+import api from '../api/axiosConfig';
 
 export default function ChangePassword() {
     const {register, handleSubmit, reset, watch, formState: {errors, isSubmitting}} = useForm();

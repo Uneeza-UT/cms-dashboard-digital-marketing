@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import DeleteModal from "../Components/ui/DeleteModal";
 import ClientViewModal from "../Components/ui/ClientViewModal";
 import ClientAddEditModal from "../Components/ui/ClientAddEditModal";
-import api from "../api/AxiosConfig";
+import api from "../api/axiosConfig";
 import { clientsFilterConfig } from "../data/clientsFilterConfig";
 
 export default function Clients() {

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Rocket, Eye, EyeOff } from 'lucide-react'
 import { NavLink, useNavigate } from "react-router-dom"
 import { toast } from 'react-toastify';
-import api from '../api/AxiosConfig';
+import api from '../api/axiosConfig';
 
 export default function Login() {
 

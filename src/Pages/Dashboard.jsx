@@ -1,7 +1,7 @@
 import StatsCard from "../Components/Dashboard/StatsCard";
 import { useState, useEffect } from "react"
 import { Link } from "lucide-react";
-import api from "../api/AxiosConfig";
+import api from "../api/axiosConfig";
 import Table from "../Components/Table";
 import { Plus, View } from "lucide-react";
 

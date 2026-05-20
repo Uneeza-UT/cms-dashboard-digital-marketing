@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react"
 import Avatar from "../assets/images/Avatar.png"
 import { toast } from 'react-toastify';
 import { useForm } from "react-hook-form";
-import api from "../api/AxiosConfig";
+import api from "../api/axiosConfig";
 
 export default function Profile() {
 
