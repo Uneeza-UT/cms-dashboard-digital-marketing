@@ -1,16 +1,70 @@
-# React + Vite
+# CMS – Digital Marketing Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a CMS (Content Management System) backend built using ASP.NET Core Web API for a digital marketing platform. It allows administrators to manage consultation requests submitted through the frontend website.
 
-Currently, two official plugins are available:
+The system stores client inquiries in a database and provides secure access through JWT authentication with role-based authorization.
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Status
 
-## React Compiler
+🚧 Deployment: In progress  
+🌐 Live Demo: Coming soon
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- JWT Authentication system
+- Role-based access (Admin / Client)
+- Consultation form data management
+- CMS dashboard support (backend logic)
+- Azure SQL Database integration
+- CRUD operations for leads/clients
+- RESTful API architecture
+
+---
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- JWT Authentication
+- REST API integration
+
+
+---
+
+## 🖼️ Screenshots
+
+### CMS Dashboard
+![Dashboard](./assets/dashboard.jpg)
+
+
+
+---
+
+## 📌 Notes
+
+- Backend is shared across platform modules
+- Environment variables are excluded from repository for security
+- Designed for scalability and future SaaS expansion
+
+---
+
+
+## 👨‍💻 Author
+
+**Uneeza Tukassar**  
+Full-Stack Developer (React + ASP.NET Core)
+
+---
+
+## 📫 Contact
+
+## Connect with me
+
+- 💻 [GitHub](https://github.com/Uneeza-UT/cms-dashboard-digital-marketing)
+🎨 [Behance Case Study](https://www.behance.net/gallery/248416771/CMS-Dashboard-for-Digital-Marketing-Agency)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/uneeza-tukassar-53b4a01a3/)
