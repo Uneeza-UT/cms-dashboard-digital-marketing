@@ -7,8 +7,8 @@ The system stores client inquiries in a database and provides secure access thro
 
 ## Project Status
 
-🚧 Deployment: In progress  
-🌐 Live Demo: Coming soon
+🚧 Deployment: Deployed  
+🌐 [Live Demo](https://cms-dashboard-digital-marketing.vercel.app/)
 
 ---
 
