@@ -69,13 +69,12 @@ export default function Profile() {
             console.log(pair[0], pair[1]);
         }
 
-        console.log("formData", formData)
 
         try {
             const response = await api.patch("/profile/image",formData)
 
             toast.success('Profile image updated successfully');
-            //fetchUser();
+            fetchUser();
         }
             
         catch (error) {

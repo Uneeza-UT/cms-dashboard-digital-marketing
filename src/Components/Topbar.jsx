@@ -106,7 +106,7 @@ export default function Topbar({mobileMenuOpen, setMobileMenuOpen}) {
                             onClick={() => setToggle(!toggle)} 
                             src={
                                 user.profileImageUrl
-                                    ? `https://localhost:44345${user.profileImageUrl}`
+                                    ? `${import.meta.env.VITE_API_URL_Base}${user.profileImageUrl}`
                                     : Avatar
                             } 
                             className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-brandMarketing-400 cursor-pointer" />

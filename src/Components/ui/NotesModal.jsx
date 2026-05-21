@@ -219,24 +219,26 @@ export default function NotesModal({ isOpen, onClose, data, consultationId, fetc
                                                     </div>
                                                 </div>
                                                 ) : (
-                                                <div className="flex justify-between items-center ">
-                                                    <div className="flex flex-col gap-2">
-                                                        <p className="text-black">{note.content}</p>
-                                                        <p className="text-brandMarketing-800">{user.name + " (" + user.email + ")"} • {timeAgo(note.createdAt)}</p>
-                                                    </div>
-                                                    
+                                                <div className="flex flex-col gap-2 min-w-0">
+                                                    <div className="flex justify-between items-center gap-3 w-full min-w-0">
+                                                        <p className="text-black break-words">{note.content}</p>
 
-                                                    <div className="flex gap-3">
-                                                        <button onClick={() => {
-                                                            setEditingId(note.id);        
-                                                            setEditingText(note.content); 
-                                                        }}>
-                                                            <Pencil className='w-5 h-5 text-brandMarketing-500 hover:text-brandMarketing-600 transition duration-300 hover:scale-105'/>
-                                                        </button>
-                                                        <button onClick={() => handleDelete(note.id)}>
-                                                            <Trash2 className='w-5 h-5 text-gray-500 hover:text-gray-700 transition duration-300 hover:scale-105'/>
-                                                        </button>
+                                                        <div className="flex gap-3">
+                                                            <button onClick={() => {
+                                                                setEditingId(note.id);        
+                                                                setEditingText(note.content); 
+                                                            }}>
+                                                                <Pencil className='w-5 h-5 text-brandMarketing-500 hover:text-brandMarketing-600 transition duration-300 hover:scale-105'/>
+                                                            </button>
+                                                            <button onClick={() => handleDelete(note.id)}>
+                                                                <Trash2 className='w-5 h-5 text-gray-500 hover:text-gray-700 transition duration-300 hover:scale-105'/>
+                                                            </button>
+                                                        </div>
+                                                       
                                                     </div>
+
+                                                     <p className="text-brandMarketing-800 break-words">{user.name + " (" + user.email + ")"} • {timeAgo(note.updatedAt ? note.updatedAt : note.createdAt)}</p>
+                                                    
                                                 </div>
                                             )}                                   
                                            
