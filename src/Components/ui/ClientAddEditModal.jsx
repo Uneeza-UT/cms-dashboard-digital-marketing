@@ -46,7 +46,7 @@ export default function ClientAddEditModal({isOpen, onClose, isCreateForm, data,
 
     useEffect(() => {
         if (!isCreateForm && data) {
-
+console.log(data)
             reset({
                 name: data.name || "",
                 email: data.email || "",
