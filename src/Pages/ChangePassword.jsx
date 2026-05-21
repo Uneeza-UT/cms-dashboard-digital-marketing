@@ -47,7 +47,7 @@ export default function ChangePassword() {
                     Token: token,
                     NewPassword: formData.password
                 }
-                console.log(payload)
+                
         try {
             await api.post(`/forgotPassword/reset-password`, 
                 {

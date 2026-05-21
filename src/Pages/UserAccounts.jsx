@@ -186,7 +186,7 @@ export default function UserAccounts() {
 
         return searchMatch && filterMatch;
     })
-   { console.log(filteredData)}
+
     const normalizedData = filteredData.map((row, index) => ({
        
         srNumber: index + 1,

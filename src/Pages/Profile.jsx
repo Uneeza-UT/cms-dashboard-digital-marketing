@@ -65,9 +65,6 @@ export default function Profile() {
         const formData = new FormData();
         formData.append("Id", parseInt(user.id));
         formData.append("ImageFile", file);
-        for (let pair of formData.entries()) {
-            console.log(pair[0], pair[1]);
-        }
 
 
         try {
