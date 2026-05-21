@@ -72,7 +72,7 @@ export default function Profile() {
         console.log("formData", formData)
 
         try {
-            const response = await api.patch("/Profile/image",formData)
+            const response = await api.patch("/profile/image",formData)
 
             toast.success('Profile image updated successfully');
             //fetchUser();
@@ -170,7 +170,7 @@ export default function Profile() {
                     <img
                          src={
                             user.profileImageUrl
-                                ? `https://localhost:44345${user.profileImageUrl}`
+                                ? `${import.meta.env.VITE_API_URL_Base}${user.profileImageUrl}`
                                 : Avatar
                         }
                         className="w-52 h-52 rounded-full cursor-pointer object-cover"
