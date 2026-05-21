@@ -7,7 +7,7 @@ import DeleteModal from "../Components/ui/DeleteModal";
 import ConsultationModal from "../Components/ui/ConsultationModal";
 import NotesModal from "../Components/ui/NotesModal";
 import api from "../api/axiosConfig";
-import { consultationsFilterConfig } from "../data/ConsultationsfilterConfig";
+import { consultationsFilterConfig } from "../data/consultationsFilterConfig";
 
 
 export default function Consultations() {

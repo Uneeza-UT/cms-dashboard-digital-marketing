@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import DeleteModal from "../Components/ui/DeleteModal";
 import UserAddEditModal from "../Components/ui/UserAddEditModal";
 import api from "../api/axiosConfig";
-import { employeesFilterConfig } from "../data/EmployeesFilterConfig";
+import { employeesFilterConfig } from "../data/employeesFilterConfig";
 
 
 export default function UserAccounts() {
