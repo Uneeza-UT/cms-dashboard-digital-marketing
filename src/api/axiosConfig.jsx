@@ -24,12 +24,11 @@ api.interceptors.response.use(
       console.log("STATUS:", error.response.status);
     }
 
-    
-    if (error.response && error.response.status === 401) {
-      
-      localStorage.removeItem("token"); // if using JWT
 
-      window.location.href = "/login"; // redirect to login
+    if (error.response?.status === 401 && !error.config.url.includes("/login")) 
+    {
+        localStorage.removeItem("token");
+        window.location.href = "/login";
     }
 
     return Promise.reject(error);
